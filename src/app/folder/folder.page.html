@@ -15,7 +15,9 @@
   </ion-header>
 
   <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <strong class="capitalize">Input number</strong>
+    <ion-input value={{number}}></ion-input>
+    <ion-button *ngIf="!active" shape="round" fill="outlinie" (click)='call()'>CALL</ion-button>
+    <ion-button *ngIf="active" shape="round" fill="outlinie" (click)='hangup()'>HANGUP</ion-button>
   </div>
 </ion-content>
